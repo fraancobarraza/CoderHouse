@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Noto Sans', sans-serif;
+	background: #D7D3C5;
+    main{
+        background: #D7D3C5;
+        font-family: 'Noto Sans', sans-serif;
+    }
+}
+
+/*Header*/
+@media (min-width: 576px){
+	.fixed-top{
+		display: none;
+	}
+}
+@media (max-width: 576px){
+	nav .logo, .links, .redSocial, .widtlink{
+		display: none;
+		background: none;
+	}
+	nav div a{
+		display: none;
+	}
+	body header{
+		background: none;
+		width: 0;
+	}
+}
+.logoMobile{
+	width: 120px;
+}
+.mobileBar {
+    li{
+        list-style: none;
+        a{
+            color: white;
+            img{
+                width: 50px;
+            }
+        }
+    }
+}
+header{
+	background: #EEEBDD;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .headerContainer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .headerContainer__links{
+                display: flex;
+                margin-left: 360px;
+                border-right: 1px solid #FFFEFB;
+                border-left: 1px solid #FFFEFB;
+                :link{
+                    color: black;
+                }
+                :visited{
+                    color: black;
+                }
+                :hover{
+                    border-bottom-color: black;
+                }
+                a{
+                    padding: 30px 12px;
+                    text-decoration: none;
+                    border-bottom: 4px solid transparent;
+                    width: 200px;
+                    text-align: center;
+                    font-family: 'Noto Sans', sans-serif;
+                    &.headerContainer__links--activate{
+                        border-bottom-color: black;
+                    }
+                }
+            }
+        }
+        .widthLink{
+            a{
+                img{
+                    width: 35px;
+                }
+            }
+        }
+        .redSocial{
+            margin-right: 90px;
+            a{
+                padding: 16px 20px;
+            }            
+        }
+    }
+} 
+/*Pagina Principal*/
+@media(max-width: 768px){
+	
+}
+
+.contenedor{
+    margin: 0 140px;
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3fr 1fr 2fr 1fr 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    min-height: 100vh;
+    grid-template-areas:
+    "fotoInicio fotoInicio fotoInicio fotoInicio"
+    ". infoEmpresa infoEmpresa ."
+    "foto1 foto2 foto3 foto4"
+    "comprar1 comprar2 comprar3 comprar4"
+    "premios premios premios premios"
+    "footer footer footer footer";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    align-items: start;
+    justify-items: center;
+    text-align: center;
+    #fotoInicio{
+        grid-area: fotoInicio;
+        div{
+            .carousel-indicators{
+                margin-left: 100px;
+            }
+        }
+    }
+    .infoEmpresa{
+        grid-area: infoEmpresa;
+        align-items: center;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.85) 52%, rgb(236, 161, 49) 100%);
+        padding: 23px;
+        .infoEmpresa__texto{
+            align-items: center;
+            justify-self: center;
+            text-align: center;
+            color: black;
+            &.infoEmpresa__texto--medium{
+                font-size: 18px;
+            }
+        }
+    }
+    .contenedor__subtitulo{
+        text-align: left;
+        justify-self: start;
+        align-self: end;
+        &.contenedor__subtitulo--big{
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+    @for $i from 1 through 4 {
+        #foto#{$i}{
+            grid-area: foto#{$i};
+            background: #c7ad7c;
+            padding: 5px 0;
+            img{
+                width: 75%;
+            }
+        }
+        .comprar#{$i}{
+            grid-area: comprar#{$i};
+            background: #c7ad7c;
+            padding: 5px 118px 23px 119px;
+            p{
+                margin-bottom: 10px;
+                font-weight: 700;
+            }
+            a{
+                color: white;
+                background: #CE1212;
+                margin-top: 10px;
+                padding: 10px;
+                text-decoration: none;
+                border: 1px solid black;
+                &:hover{
+                    background: #810000;
+                }
+            }
+        }
+    }
+    #premios{
+        grid-area: premios;
+        img{
+            width: 440px;
+            margin: 0 49px;
+        }
+        .premios__titulo{
+            text-align: left;
+            &.premios__titulo--big{
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+
+/*Shop*/
+
+#secciones{
+	padding: 85px 140px 0 140px;
+    .shop{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 40px;
+        &.shop--center{
+            text-align: center;
+        }
+        div{
+            img{
+                width: 315px;
+                border: 1px solid #000;
+                background: #c7ad7c;
+                padding: 20px;
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+            .shop__nameProd{
+                &.shop__nameProd--big{
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+            .shop__priceProd{
+                &.shop__priceProd--medium{
+                    font-size: 18px;                    
+                }
+            }
+            .buyProd{
+                margin-top: 10px;
+                a{
+                    border: 1px solid black;
+                    background-color: #ff2023;
+                    padding: 10px;
+                    background: #CE1212;
+                    text-decoration: none;
+                    &:link{
+                        color: white;
+                    }
+                    &:visited{
+                        color: white;
+                    }
+                    &:hover{
+                        background: #810000
+                    }
+                }
+            }
+        }
+    }
+}
+
+#pagina{
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/*Secciones del shop*/
+
+.comprarQueso{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 10px;
+    img{
+        width: 300px;
+        flex: 15%;
+        padding: 20px;
+        border: 1px solid black;
+        background: #c7ad7c;
+    }
+    .textQueso{
+        flex: 70%;
+        margin-left: 10px;
+        p{
+            font-size: 18px;
+        }
+        ul{
+            li{
+                font-size: 18px;
+                list-style: inside;
+                margin: 10px 0;
+            }
+        }
+        #precio{
+            font-size: 24px;
+            font-weight: 700;
+        }
+        #comprar{
+            margin-top: 20px;
+            a{
+                color: white;
+                background: #CE1212;
+                padding: 10px;
+                text-decoration: none;
+                border: 1px solid black;
+                &:hover{
+                    background: #810000;
+                }
+            }
+        }
+    }
+}
+
+/*Compra Realizada*/
+
+.comprado{
+	color: black;
+	font-size: 24px;
+	font-weight: 700;
+}
+.volverShop{
+	padding: 100px 0 200px 0;
+    a{
+        color: white;
+        background: #CE1212;
+        padding: 10px;
+        text-decoration: none;
+        border: 1px solid black;
+    }
+}
+
+
+/*Recetas*/
+
+@media (max-width: 576px){
+	#recetasContainer video{
+		width: 300px;
+	}
+}
+
+#recetasContainer{
+	padding-top: 85px;
+	width: 80%;
+	margin: 0 auto;
+    div{
+        .recetasContainer__titulo{
+            text-decoration: underline;
+            &.recetasContainer__titulo--big{
+                font-size: 28px;
+            }
+            &.recetasContainer__titulo--medium{
+                font-size: 24px;
+            }
+        }
+        .receta{
+            list-style-position: inside;
+        }
+    }
+}
+
+
+/*Donde Comprar*/
+
+.accordion{
+	padding: 40px 0 100px 0;
+}
+h1{
+	padding: 20px 0;
+}
+.card-header{
+	background-color: #CE1212;
+}
+
+
+
+/*Contacto*/
+
+.paginaContacto{
+	color: black;
+	font-size: 24px;
+	font-weight: 700;
+}
+.contacto{
+	background: #c7ad7c;
+    p{
+        padding-top: 50px;
+        font-weight: 700;
+        float: right;
+        margin-left: 37%;
+        margin-right: 6%;
+    }
+    #formulario{
+        padding-bottom: 140px;
+        margin-left: 20px;
+        font-weight: 700;
+    }
+} 
+
+
+/*Footer*/
+
+@media (max-width: 576px){
+	footer{
+        div{
+            width: 50%;
+        }
+        iframe{
+            display: none;
+        }
+        .infoFooter1{
+            display: none;
+        }
+        .infoFooter2{
+            display: none;
+        }
+    }
+}
+
+footer{
+	grid-area: footer;
+	background: linear-gradient(180deg, rgba(206,18,18,1) 0%, rgba(129,0,0,1) 50%, rgba(0,0,0,1) 100%);
+	width: 100%;
+	min-height: 100%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-top: 57px;
+	font-size: 18px;
+    div{
+        list-style: none;
+        text-align: left;
+        margin-left: 187px;
+        padding: 17px 0;
+        margin-right: 50px;
+        a{
+            text-decoration: none;
+            &:link{
+                color: white;
+            }
+            &:visited{
+                color: white;
+            }
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .infoFooter1{
+            float: right;
+            margin-top: -115px;
+            margin-right: 530px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+        .infoFooter2{
+            float: right;
+            margin-top: -57px;
+            margin-right: 585px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+    }
+    iframe{
+        float: right;
+        margin-top: -330px;
+        margin-right: 92px;
+        height: 200px;
+        width: 675px;
+    }
+}
+
+/*Whatsapp*/
+
+#wp{
+	height: 60px;
+	width: 60px;
+	position: fixed;
+	top: 890px;
+	left: 1835px;
+}
