@@ -319,19 +319,6 @@ header nav .redSocial a {
   margin-bottom: 10px;
 }
 
-.contenedor #productos div a {
-  color: white;
-  background: #CE1212;
-  margin-top: 10px;
-  padding: 10px;
-  text-decoration: none;
-  border: 1px solid black;
-}
-
-.contenedor #productos div a:hover {
-  background: #810000;
-}
-
 .contenedor #premios .premios__titulo {
   text-align: left;
 }
