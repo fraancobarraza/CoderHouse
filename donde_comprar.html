@@ -9,71 +9,125 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <title>Donde Comprar || Lacteos Barraza S.A.</title>
 </head>
-<body>
-	<main id="secciones">
-		<div id="pagina">DONDE COMPRAR</div>
-			<div class="accordion" id="accordionExample">
-			  <div class="card">
-			    <div class="card-header bg-danger" id="headingOne">
-			      <h2 class="mb-0">
-			        <button class="btn text-white btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			          LOCALES OFICIALES
-			        </button>
-			      </h2>
-			    </div>
-			    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-			      <div class="card-body">
-			      	<ul>
-			      		<li>CABA: Concordia 1344, Floresta, CABA. - Tel: (011) 4568-9547/8283 Lunes a viernes de 07:00 a 15:00 hs. y sábados de 07:00 a 14:00 hs.</li>
-			      		<li>LOMAS DEL MIRADOR: Las Heras 4144, Lomas Del Mirador, Bs. As. Zona Oeste Tel: (011) 4652-0728 Lunes a viernes de 07:00 a 14:00 hs. y sábados de 07:00 a 13:30 hs.</li>
-			      	</ul>
-			      </div>
-			    </div>
-			  </div>
-			  <h1>DISTRIBUIDORES OFICIALES</h1>
-			  <div class="card">
-			    <div class="card-header bg-danger" id="headingTwo">
-			      <h2 class="mb-0">
-			        <button class="btn text-white btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			          Capital Federal
-			        </button>
-			      </h2>
-			    </div>
-			    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-			      <div class="card-body">
-			        <ul>
-			        	<li>AGUIRRE Dirección: Av. Segurola 1668CABA, Floresta - CP C1407AOH (011) 4566-0802 </li>
-			        	<li>BOGADO DISTRIBUCIÓN Dirección: Simbrón 4406 CABA, Devoto - CP C1417 (011) 15-4173-8792 bogadodistribucion@gmail.com </li>
-			        	<li>JAVIER ARAUJO (CUCA) Dirección: Ñandutí 1543 CABA, Floresta - CP -(011) 4567-2483 / 155-311-5433 javi.araujo@hotmail.com </li>
-			        	<li>LOMBARDO SERGIO CABA, Floresta - CP -(011) 15-4928-9570 serlombardo@hotmail.com </li>
-			        	<li>LÁCTEOS PAZ Dirección: Bermudez 1299 CABA, Floresta - CP -(011) 15-3378-2383 ventas@lacteospaz.com </li>
-			        	<li>ZANELATTO S.A. Dirección: Guardia Nacional 1747 CABA, Mataderos - CP C1440DUA(011) 4682-0762 / 0641 155-249-4256 </li>
-			        </ul>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="card">
-			    <div class="card-header bg-danger" id="headingThree">
-			      <h2 class="mb-0">
-			        <button class="btn text-white btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-			          Gran Buenos Aires
-			        </button>
-			      </h2>
-			    </div>
-			    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-			      <div class="card-body">
-			        <ul>
-			        	<li>BARUTTA ARIEL CARLOS Dirección: Cornelio Saavedra 68 Buenos Aires, Moreno - CP B1744EYB (0237) 485-0117 / 537*2608 / (011) 15 5426-8140 baruttahnos@gmail.com </li>
-			        	<li> DISTRIBUIDORA ZOILO VISCAINO Dirección: 9 de Julio 4544 Buenos Aires, Olavarría - CP 4M7W+QH (02284) 42-0030 distribuidoraviscaino@gmail.com </li>
-			        	<li> DISTRISUR Dirección: Ruta 11 Km 323 Buenos Aires, Santa Teresita - CP - (02246) 15-51-0113 dsurdistribucion@yahoo.com.ar </li>
-			        	<li> EL GAUCHITO Dirección: Tetamanti 115 Buenos Aires, Mar del Plata - CP - (0223) 465-6325 </li>
-			        	<li> HIPERMAYORISTA MAKRO Dirección: Av. Champagnat y Alvarado Buenos Aires, Mar del Plata - CP - (0223) 626-2800 </li>
-			        	<li> LAS BREÑAS Dirección: Del Cazón 1228 Buenos Aires, Pinamar - CP B7167 (02267) 15-63-4858 / (02254) 49-7471 </li>
-			        </ul>
-			      </div>
-			    </div>
-			  </div>
+<header class="fixed-top d-none d-xl-block">
+	<nav>
+		<div class="headerContainer">
+			<div class="logo">
+				<a href="index.html"><img src="media/header/logo.png" alt="logo"></a>
 			</div>
+
+			<div class="headerContainer__links">
+				<a href="index.html">Inicio</a>
+				<a href="shop.html">Shop</a>
+				<a href="recetas.html">Recetas</a>
+				<a href="donde_comprar.html" class="headerContainer__links--activate">Donde Comprar</a>
+				<a href="contacto.html">Contacto</a>
+			</div>
+		</div>
+		<div class="redSocial widthLink">
+			<a href="https://www.instagram.com/lacteosbarrazasa/" target="_blank"><img src="media/header/instagram.png" alt="Instagram"></a>
+			<a href="https://www.facebook.com/lacteos.barraza" target="_blank"><img src="media/header/facebook.png" alt="Facebook"></a>
+			<a href="https://twitter.com/LacteosBarraza" target="_blank"><img src="media/header/twitter.png" alt="Twitter"></a>
+		</div>
+	</nav>
+</header>
+<nav class="navbar navbar-expand-xl navbar-light bg-light mobileBar d-xl-none fixed-top">
+	<a href="index.html"><img src="media/header/logo.png" alt="logo" class="logoMobile"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+	  <ul class="navbar-nav">
+		<li class="nav-item">
+		  <a class="nav-link" href="index.html">Inicio</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="shop.html">Shop</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="recetas.html">Recetas</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link active" href="donde_comprar.html">Donde Comprar<span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="contacto.html">Contacto</a>
+		</li>
+		<li class="d-flex justify-content-evenly redSocial widthLink">
+			<a class="nav-link" href="https://www.instagram.com/lacteosbarrazasa/" target="_blank"><img src="media/header/instagram.png" alt="Instagram"></a>
+			<a class="nav-link" href="https://www.facebook.com/lacteos.barraza" target="_blank"><img src="media/header/facebook.png" alt="Facebook"></a>
+			<a class="nav-link" href="https://twitter.com/LacteosBarraza" target="_blank"><img src="media/header/twitter.png" alt="Twitter"></a>
+		</li>
+	  </ul>
+	</div>
+  </nav>
+<body class="font-weight-regular">
+	<main>
+		<div class="secciones">
+			<div class="pagina font-weight-bold">DONDE COMPRAR</div>
+				<div class="accordion" id="accordionLocales">
+				<div class="card">
+					<div class="card-header bg-danger" id="headingOne">
+					<h2 class="mb-0">
+						<button class="btn text-white btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						LOCALES OFICIALES
+						</button>
+					</h2>
+					</div>
+					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionLocales">
+					<div class="card-body">
+						<ul>
+							<li>CABA: Concordia 1344, Floresta, CABA. - Tel: (011) 4568-9547/8283 Lunes a viernes de 07:00 a 15:00 hs. y sábados de 07:00 a 14:00 hs.</li>
+							<li>LOMAS DEL MIRADOR: Las Heras 4144, Lomas Del Mirador, Bs. As. Zona Oeste Tel: (011) 4652-0728 Lunes a viernes de 07:00 a 14:00 hs. y sábados de 07:00 a 13:30 hs.</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+				<div class="pagina font-weight-semi-bold">DISTRIBUIDORES OFICIALES</div>
+				<div class="card">
+					<div class="card-header bg-danger" id="headingTwo">
+					<h2 class="mb-0">
+						<button class="btn text-white btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						Capital Federal
+						</button>
+					</h2>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionLocales">
+					<div class="card-body">
+						<ul>
+							<li>AGUIRRE Dirección: Av. Segurola 1668CABA, Floresta - CP C1407AOH (011) 4566-0802 </li>
+							<li>BOGADO DISTRIBUCIÓN Dirección: Simbrón 4406 CABA, Devoto - CP C1417 (011) 15-4173-8792 bogadodistribucion@gmail.com </li>
+							<li>JAVIER ARAUJO (CUCA) Dirección: Ñandutí 1543 CABA, Floresta - CP -(011) 4567-2483 / 155-311-5433 javi.araujo@hotmail.com </li>
+							<li>LOMBARDO SERGIO CABA, Floresta - CP -(011) 15-4928-9570 serlombardo@hotmail.com </li>
+							<li>LÁCTEOS PAZ Dirección: Bermudez 1299 CABA, Floresta - CP -(011) 15-3378-2383 ventas@lacteospaz.com </li>
+							<li>ZANELATTO S.A. Dirección: Guardia Nacional 1747 CABA, Mataderos - CP C1440DUA(011) 4682-0762 / 0641 155-249-4256 </li>
+						</ul>
+					</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header bg-danger" id="headingThree">
+					<h2 class="mb-0">
+						<button class="btn text-white btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						Gran Buenos Aires
+						</button>
+					</h2>
+					</div>
+					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionLocales">
+					<div class="card-body">
+						<ul>
+							<li>BARUTTA ARIEL CARLOS Dirección: Cornelio Saavedra 68 Buenos Aires, Moreno - CP B1744EYB (0237) 485-0117 / 537*2608 / (011) 15 5426-8140 baruttahnos@gmail.com </li>
+							<li> DISTRIBUIDORA ZOILO VISCAINO Dirección: 9 de Julio 4544 Buenos Aires, Olavarría - CP 4M7W+QH (02284) 42-0030 distribuidoraviscaino@gmail.com </li>
+							<li> DISTRISUR Dirección: Ruta 11 Km 323 Buenos Aires, Santa Teresita - CP - (02246) 15-51-0113 dsurdistribucion@yahoo.com.ar </li>
+							<li> EL GAUCHITO Dirección: Tetamanti 115 Buenos Aires, Mar del Plata - CP - (0223) 465-6325 </li>
+							<li> HIPERMAYORISTA MAKRO Dirección: Av. Champagnat y Alvarado Buenos Aires, Mar del Plata - CP - (0223) 626-2800 </li>
+							<li> LAS BREÑAS Dirección: Del Cazón 1228 Buenos Aires, Pinamar - CP B7167 (02267) 15-63-4858 / (02254) 49-7471 </li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		</main>
 		<footer>
 			<div><a href="index.html">Lacteos Barraza</a></div>
@@ -82,7 +136,7 @@
 			<div><a href="donde_comprar.html">Donde Comprar</a></div>
 			<div><a href="preguntas.html">Preguntas Frecuentes</a></div>
 			<div><a href="contacto.html">Reclamos</a></li>
-			<div>
+			<div class="rightFooter">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.397355338674!2d-58.48655824866335!3d-34.61939756574008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9e84b24c85d%3A0x331c55dc21eb9b59!2sL%C3%A1cteos%20Barraza!5e0!3m2!1ses-419!2sar!4v1630012673654!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 				<div class="infoFooter1">
 					info@lacteosbarraza.com.ar
@@ -97,30 +151,11 @@
 				<img id="wp" src="media/whatsapp.png" alt="Whatsapp">
 			</a>
 		</div>
-		<header>
-			<nav>
-				<div class="headerContainer">
-					<div class="logo">
-						<a href="index.html"><img src="media/header/logo.png" alt="logo"></a>
-					</div>
-
-					<div class="headerContainer__links">
-						<a href="index.html">Inicio</a>
-						<a href="shop.html">Shop</a>
-						<a href="recetas.html">Recetas</a>
-						<a href="donde_comprar.html" class="headerContainer__links--activate">Donde Comprar</a>
-						<a href="contacto.html">Contacto</a>
-					</div>
-				</div>
-				<div class="redSocial widthLink">
-					<a href="https://www.instagram.com/lacteosbarrazasa/" target="_blank"><img src="media/header/instagram.png" alt="Instagram"></a>
-					<a href="https://www.facebook.com/lacteos.barraza" target="_blank"><img src="media/header/facebook.png" alt="Facebook"></a>
-					<a href="https://twitter.com/LacteosBarraza" target="_blank"><img src="media/header/twitter.png" alt="Twitter"></a>
-				</div>
-			</nav>
-		</header>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-  </body>
+  	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
 </html>

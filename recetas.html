@@ -5,10 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<title>Recetas || Lacteos Barraza S.A.</title>
 </head>
-<body>
-	<header>
+<body class="font-weight-regular">
+	<header class="d-none d-xl-block">
 		<nav>
 			<div class="headerContainer">
 				<div class="logo">
@@ -30,33 +31,41 @@
 			</div>
 		</nav>
 	</header>
-	<div class="fixed-top">
-	  <div class="collapse" id="navbarToggleExternalContent">
-	    <div class="bg-danger p-4">
-		<ul class="mobileBar">
-			<li><a href="index.html">Inicio</a></li>
-			<li><a href="shop.html">Shop</a></li>
-			<li><a href="recetas.html">Recetas</a></li>
-			<li><a href="donde_comprar.html">Donde Comprar</a></li>
-			<li><a href="contacto.html">Contacto</a></li>
-			<a href="https://www.instagram.com/lacteosbarrazasa/" target="_blank"><img src="media/header/instagram.png" alt="Instagram"></a>
-			<a href="https://www.facebook.com/lacteos.barraza" target="_blank"><img src="media/header/facebook.png" alt="Facebook"></a>
-			<a href="https://twitter.com/LacteosBarraza" target="_blank"><img src="media/header/twitter.png" alt="Twitter"></a>
-		</ul>
-	    </div>
-	  </div>
-	  <nav class="navbar navbar-dark bg-danger">
-	  	<a href="index.html"><img src="media/header/logo.png" alt="logo" class="logoMobile"></a>
-	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
+	  <nav class="navbar navbar-expand-xl navbar-light bg-light mobileBar d-xl-none fixed-top">
+		<a href="index.html"><img src="media/header/logo.png" alt="logo" class="logoMobile"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		  <ul class="navbar-nav">
+			<li class="nav-item">
+			  <a class="nav-link" href="index.html">Inicio</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="shop.html">Shop</a>
+			</li>
+			<li class="nav-item active">
+			  <a class="nav-link" href="recetas.html">Recetas<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="donde_comprar.html">Donde Comprar</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="contacto.html">Contacto</a>
+			</li>
+			<li class="d-flex justify-content-evenly redSocial widthLink">
+				<a class="nav-link" href="https://www.instagram.com/lacteosbarrazasa/" target="_blank"><img src="media/header/instagram.png" alt="Instagram"></a>
+				<a class="nav-link" href="https://www.facebook.com/lacteos.barraza" target="_blank"><img src="media/header/facebook.png" alt="Facebook"></a>
+				<a class="nav-link" href="https://twitter.com/LacteosBarraza" target="_blank"><img src="media/header/twitter.png" alt="Twitter"></a>
+			</li>
+		  </ul>
+		</div>
 	  </nav>
-	</div>
 	<main>
-	<div id="recetasContainer">	
-		<div id="pagina">RECETAS</div>
+	<div id="recetasContainer" class="pt-xl-0">	
+		<div class="pagina font-weight-bold">RECETAS</div>
 		<div>
-			<div class="recetasContainer__titulo recetasContainer__titulo--big">INGREDIENTES</div>
+			<div class="recetasContainer__titulo recetasContainer__titulo--big font-weight-semi-bold">INGREDIENTES</div>
 			<ul class="receta">
 				<li>3 bifes de nalga finos</li>
 				<li>Cantimpalo en fetas 100 grs.</li>
@@ -65,7 +74,7 @@
 				<li>Caldo de verduras 500 cc</li>
 			</ul>
 			<br>
-			<div class="recetasContainer__titulo recetasContainer__titulo--medium">PASOS</div>
+			<div class="recetasContainer__titulo recetasContainer__titulo--medium font-weight-medium">PASOS</div>
 			<ol class="receta">
 				<li>Comenzamos limpiando nuestros bifes y procedemos a rellenarlos con el cantimpalo, las verduras y la muzza!
 				Envolvemos y cerramos con palitos escarbadientes.</li>
@@ -88,7 +97,7 @@
 		<div><a href="donde_comprar.html">Donde Comprar</a></div>
 		<div><a href="preguntas.html">Preguntas Frecuentes</a></div>
 		<div><a href="contacto.html">Reclamos</a></li>
-		<div>
+		<div class="rightFooter">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.397355338674!2d-58.48655824866335!3d-34.61939756574008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9e84b24c85d%3A0x331c55dc21eb9b59!2sL%C3%A1cteos%20Barraza!5e0!3m2!1ses-419!2sar!4v1630012673654!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			<div class="infoFooter1">
 				info@lacteosbarraza.com.ar

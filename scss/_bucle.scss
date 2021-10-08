@@ -1,0 +1,5 @@
+@each $v, $k in $fuentes {
+    .font-weight-#{$v}{
+        font-weight: $k;
+    }
+}
