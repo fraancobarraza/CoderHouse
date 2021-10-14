@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="description" content="Descubre cuales son las mejores recetas con nuestros productos!">
-	<meta name="keywords" content="Lacteos Barraza, Quesos, Receta Quesos">
+	<meta name="description" content="Shop. Compra y envíos de productos lacteos por Capital Federal.">
+	<meta name="keywords" content="Lacteos Barraza, Quesos, Comprar Lacteos Barraza, Comprar quesos">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-	<title>Recetas || Lacteos Barraza S.A.</title>
+	<title>Shop || Lacteos Barraza S.A.</title>
 </head>
-<body class="font-weight-regular">
-	<header class="d-none d-xl-block">
+	<header class="fixed-top d-none d-xl-block">
 		<nav>
 			<div class="headerContainer">
 				<div class="logo">
@@ -33,7 +31,7 @@
 			</div>
 		</nav>
 	</header>
-	  <nav class="navbar navbar-expand-xl navbar-light bg-light mobileBar d-xl-none fixed-top">
+	<nav class="navbar navbar-expand-xl navbar-light bg-light mobileBar d-xl-none fixed-top">
 		<a href="index.html"><img src="media/header/logo.png" alt="logo" class="logoMobile"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
@@ -62,35 +60,35 @@
 			</li>
 		  </ul>
 		</div>
-	  </nav>
-	<main>
-	<div id="recetasContainer" class="pt-xl-0">	
-		<div class="pagina font-weight-bold">RECETAS</div>
-		<div>
-			<div class="recetasContainer__titulo recetasContainer__titulo--big font-weight-semi-bold">INGREDIENTES</div>
-			<ul class="receta">
-				<li>3 bifes de nalga finos</li>
-				<li>Cantimpalo en fetas 100 grs.</li>
-				<li>Zanahoria y morrón salteados</li>
-				<li>Bastones de queso muzzarella Barraza</li>
-				<li>Caldo de verduras 500 cc</li>
-			</ul>
+	</nav>
+<body class="font-weight-regular">
+	  <main>
+		<div class="secciones">
+			<div class="pagina font-weight-bold">RECETAS</div>
+			<div class="mainRecetas d-flex flex-row flex-wrap justify-content-around text-center">
+				<div>
+					<img src="media/recetas/thumbnail1.jpg" class="imgRecetas" alt="Papas Volcan">
+					<div class="font-weight-semi-bold">Papas Volcán</div>
+						<a href="receta1.html"><button type="button" class="btn btn-danger">Leer Más</button></a>
+				</div>
+				<div>
+					<img src="media/recetas/thumbnail2.jpg" class="imgRecetas" alt="Pizza de Arroz">
+					<div class="font-weight-semi-bold">Pizza de Arroz</div>
+							<a href="receta2.html"><button type="button" class="btn btn-danger">Leer Más</button></a>
+				</div>
+				<div>
+					<img src="media/recetas/thumbnail3.jpg" class="imgRecetas" alt="Empanadas de Vacío y Provoleta">
+					<div class="font-weight-semi-bold">Empanadas de Vacío y Provoleta</div>
+							<a href="receta3.html"><button type="button" class="btn btn-danger">Leer Más</button></a>
+				</div>
+				<div>
+					<img src="media/recetas/thumbnail4.jpg" class="imgRecetas" alt="Mac and Cheese">
+					<div class="font-weight-semi-bold">Mac and Cheese</div>
+							<a href="receta4.html"><button type="button" class="btn btn-danger">Leer Más</button></a>
+				</div>
+			</div>
 			<br>
-			<div class="recetasContainer__titulo recetasContainer__titulo--medium font-weight-medium">PASOS</div>
-			<ol class="receta">
-				<li>Comenzamos limpiando nuestros bifes y procedemos a rellenarlos con el cantimpalo, las verduras y la muzza!
-				Envolvemos y cerramos con palitos escarbadientes.</li>
-				<li>Luego pasamos por harina y sellamos en sartén bien caliente.</li>
-				<li>Por ultimo sumamos el caldo de verduras y tapamos para terminar la cocción.</li>
-			</ol>
 		</div>
-		<div>
-			<video width="500px" muted controls>
-				<source src="media/receta.mp4" type="video/mp4">
-					<p>No se ve, entonces... </p><a href="https://www.instagram.com/tv/CR9JLTVDzV8/" target="_blank">Ver en Instagram</a>
-			</video>
-		</div>
-	</div>
 	</main>
 	<footer>
 		<div><a href="index.html">Lacteos Barraza</a></div>
@@ -114,7 +112,6 @@
 			<img id="wp" src="media/whatsapp.png" alt="Whatsapp">
 		</a>
 	</div>
-
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>

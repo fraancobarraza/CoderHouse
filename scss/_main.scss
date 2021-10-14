@@ -334,6 +334,17 @@ header{
             }
         }
     }
+    .mainRecetas{
+        margin: 40px 0 50px 0;
+        div{
+            .imgRecetas{
+                width: 350px;
+                border: 1px solid #000;
+                background: #c7ad7c;
+                padding: 10px;
+            }
+        }
+    }
 }
 
 .pagina{
