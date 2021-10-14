@@ -8,9 +8,13 @@
 body{
 	font-family: 'Poppins', sans-serif;
 	background: #D7D3C5;
+    
     main{
         background: #D7D3C5;
         font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 70vh;
     }
 }
 
@@ -450,32 +454,50 @@ header{
 
 @media (max-width: 1200px){
 	footer{
-        div{
-            width: 50%;
-        }
-        .rightFooter{
-            display: none;
+        .footerContainer{
+            .rightFooter{
+                display: none;
+                iframe{
+                    display: none;
+                }
+                div{
+                    display: none;
+                }
+            }
         }
     }
 }
 
 footer{
-	grid-area: footer;
 	background: linear-gradient(180deg, rgba(206,18,18,1) 0%, rgba(129,0,0,1) 50%, rgba(0,0,0,1) 100%);
-	width: 100%;
-	min-height: 100%;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	padding-top: 57px;
-	font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    div{
-        list-style: none;
-        text-align: left;
-        margin-left: 187px;
-        padding: 17px 0;
+    margin-top: auto;
+    .footerContainer{
+        display: flex;
+        flex-direction: row;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        margin: 0 auto;
+        width: 87%;
+        height: 350px;
+        padding: 30px;
+        justify-content: space-between;
+        align-items: stretch;
+        color: white;
+        margin: auto;
+        .leftFooter{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .rightFooter{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        iframe{
+            height: 200px;
+            width: 675px;
+        }
         a{
             text-decoration: none;
             &:link{
@@ -488,23 +510,6 @@ footer{
                 text-decoration: underline;
             }
         }
-        .infoFooter1{
-            float: right;
-            margin-top: -115px;
-            margin-right: 530px;
-        }
-        .infoFooter2{
-            float: right;
-            margin-top: -57px;
-            margin-right: 600px;
-        }
-    }
-    iframe{
-        float: right;
-        margin-top: -330px;
-        margin-right: 110px;
-        height: 200px;
-        width: 675px;
     }
 }
 
