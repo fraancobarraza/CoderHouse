@@ -421,6 +421,10 @@ header nav .redSocial a {
   text-align: center;
 }
 
+.secciones .shop div a {
+  cursor: pointer;
+}
+
 .secciones .shop div .imgShop {
   width: 315px;
   border: 1px solid #000;
@@ -510,6 +514,11 @@ header nav .redSocial a {
   border: 1px solid #000;
   background: #c7ad7c;
   padding: 10px;
+}
+
+.secciones .mainRecetas div .imgRecetas:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .pagina {

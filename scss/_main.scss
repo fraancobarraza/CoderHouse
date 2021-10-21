@@ -273,6 +273,9 @@ header{
             text-align: center;
         }
         div{
+            a{
+                cursor: pointer;
+            }
             .imgShop{
                 width: 315px;
                 border: 1px solid #000;
@@ -346,6 +349,9 @@ header{
                 border: 1px solid #000;
                 background: #c7ad7c;
                 padding: 10px;
+                &:hover{
+                    transform: scale(1.05);
+                }
             }
         }
     }
