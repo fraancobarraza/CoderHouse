@@ -199,8 +199,11 @@ header{
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            img{
-                width: 80%;
+            a{
+                img{
+                    width: 80%;
+                    margin-left: 10%;
+                }
             }
             p{
                 margin-bottom: 10px;

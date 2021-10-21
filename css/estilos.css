@@ -319,8 +319,9 @@ header nav .redSocial a {
           align-items: center;
 }
 
-.contenedor #productos div img {
+.contenedor #productos div a img {
   width: 80%;
+  margin-left: 10%;
 }
 
 .contenedor #productos div p {
