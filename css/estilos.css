@@ -75,118 +75,32 @@ body main {
 }
 
 /*Header*/
-@media (max-width: 1200px) {
-  .navbar div ul a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .navbar div ul a img {
-    width: 50px;
-    margin: 25px 20px 0 20px;
-  }
+.widthLink a img {
+  width: 40px;
 }
 
-.logoMobile {
-  width: 120px;
-}
-
-header {
-  background: #EEEBDD;
-  position: relative;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-
-header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header nav .headerContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header nav .headerContainer .headerContainer__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 360px;
-  border-right: 1px solid #FFFEFB;
-  border-left: 1px solid #FFFEFB;
-}
-
-header nav .headerContainer .headerContainer__links :link {
-  color: black;
-}
-
-header nav .headerContainer .headerContainer__links :visited {
-  color: black;
-}
-
-header nav .headerContainer .headerContainer__links :hover {
-  border-bottom-color: black;
-}
-
-header nav .headerContainer .headerContainer__links a {
-  padding: 30px 12px;
+.navbar-nav a {
+  padding: 30px 0;
   text-decoration: none;
   border-bottom: 4px solid transparent;
-  width: 200px;
-  text-align: center;
   font-family: 'Poppins', sans-serif;
 }
 
-header nav .headerContainer .headerContainer__links a.headerContainer__links--activate {
+.navbar-nav a:hover {
   border-bottom-color: black;
 }
 
-header nav .widthLink a img {
-  width: 35px;
+.navbar-nav a.headerContainer__links--activate {
+  border-bottom-color: black;
 }
 
-header nav .redSocial {
-  margin-right: 90px;
-}
-
-header nav .redSocial a {
-  padding: 16px 20px;
+nav {
+  background: #EEEBDD;
 }
 
 /*Pagina Principal*/
 @media (max-width: 1200px) {
   .infoEmpresa {
-    display: none;
-  }
-  .contacto p {
     display: none;
   }
 }
@@ -198,9 +112,6 @@ header nav .redSocial a {
 }
 
 @media (max-width: 700px) {
-  .carouselPc {
-    display: none;
-  }
   #productos {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -208,25 +119,11 @@ header nav .redSocial a {
   }
 }
 
-@media (min-width: 700px) {
-  .carouselMobile {
-    display: none;
-  }
-}
-
-.carousel {
-  padding: 0;
-}
-
 .contenedor {
   padding-top: 20px;
   width: 86%;
   margin: 0 auto;
   min-height: 100vh;
-}
-
-.contenedor #fotoInicio div .carousel-indicators {
-  margin-left: 100px;
 }
 
 .contenedor .infoEmpresa {
@@ -237,13 +134,7 @@ header nav .redSocial a {
 }
 
 .contenedor .infoEmpresa .infoEmpresa__texto {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
   text-align: center;
-  color: black;
 }
 
 .contenedor .infoEmpresa .infoEmpresa__texto.infoEmpresa__texto--regular {
@@ -259,13 +150,7 @@ header nav .redSocial a {
 }
 
 .contenedor .infoEmpresaMobile .infoEmpresa__texto {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
   text-align: center;
-  color: black;
 }
 
 .contenedor .infoEmpresaMobile .infoEmpresa__texto.infoEmpresa__texto--regular {
@@ -276,11 +161,6 @@ header nav .redSocial a {
 
 .contenedor .contenedor__subtitulo {
   text-align: left;
-  -ms-grid-column-align: start;
-      justify-self: start;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
 }
 
 .contenedor .contenedor__subtitulo.contenedor__subtitulo--big {
@@ -349,6 +229,7 @@ header nav .redSocial a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-bottom: 10px;
 }
 
 .contenedor #premios .imgPremios img {
@@ -360,47 +241,10 @@ header nav .redSocial a {
           transform: scale(1.05);
 }
 
-.contenedor #premios .imgPremiosMobile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.contenedor #premios .imgPremiosMobile img {
-  width: 440px;
-}
-
-.contenedor #premios .imgPremiosMobile img:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-@media (min-width: 576px) {
-  .imgPremiosMobile img {
-    display: none;
-  }
-}
-
-@media (max-width: 576px) {
-  .imgPremios img {
-    display: none;
-  }
-}
-
 /*Shop*/
 .secciones {
   width: 86%;
   margin: 0 auto;
-  padding-top: 85px;
 }
 
 .secciones .shop {
@@ -446,30 +290,6 @@ header nav .redSocial a {
   font-size: 18px;
 }
 
-.secciones .shop div .buyProd {
-  margin-top: 10px;
-}
-
-.secciones .shop div .buyProd a {
-  border: 1px solid black;
-  background-color: #ff2023;
-  padding: 10px;
-  background: #CE1212;
-  text-decoration: none;
-}
-
-.secciones .shop div .buyProd a:link {
-  color: white;
-}
-
-.secciones .shop div .buyProd a:visited {
-  color: white;
-}
-
-.secciones .shop div .buyProd a:hover {
-  background: #810000;
-}
-
 .secciones .shop .comprarQueso {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -506,6 +326,18 @@ header nav .redSocial a {
   margin: 10px 0;
 }
 
+.pagina {
+  color: black;
+  font-size: 24px;
+}
+
+/*Compra Realizada*/
+.comprado {
+  color: black;
+  font-size: 24px;
+}
+
+/*Recetas*/
 .secciones .mainRecetas {
   margin: 40px 0 50px 0;
 }
@@ -522,40 +354,9 @@ header nav .redSocial a {
           transform: scale(1.05);
 }
 
-.pagina {
-  color: black;
-  font-size: 24px;
-}
-
-/*Compra Realizada*/
-.comprado {
-  color: black;
-  font-size: 24px;
-}
-
-.volverShop {
-  padding: 100px 0 200px 0;
-}
-
-.volverShop a {
-  color: white;
-  background: #CE1212;
-  padding: 10px;
-  text-decoration: none;
-  border: 1px solid black;
-}
-
-/*Recetas*/
-@media (max-width: 1200px) {
-  #recetasContainer video {
-    width: 300px;
-  }
-}
-
 #recetasContainer {
   width: 86%;
   margin: 0 auto;
-  padding-top: 85px;
 }
 
 #recetasContainer div .recetasContainer__titulo {
@@ -574,15 +375,6 @@ header nav .redSocial a {
   list-style-position: inside;
 }
 
-/*Donde Comprar*/
-.accordion {
-  padding: 40px 0 100px 0;
-}
-
-.card-header {
-  background-color: #CE1212;
-}
-
 /*Contacto*/
 .paginaContacto {
   color: black;
@@ -591,18 +383,6 @@ header nav .redSocial a {
 
 .contacto {
   background: #c7ad7c;
-}
-
-.contacto p {
-  padding-top: 50px;
-  float: right;
-  margin-left: 37%;
-  margin-right: 6%;
-}
-
-.contacto #formulario {
-  padding-bottom: 140px;
-  margin-left: 20px;
 }
 
 /*Preguntas Frecuentes*/
@@ -651,9 +431,6 @@ footer .footerContainer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
   color: white;
   margin: auto;
 }

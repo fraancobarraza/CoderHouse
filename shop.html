@@ -9,56 +9,24 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<title>Shop || Lacteos Barraza S.A.</title>
 </head>
-	<header class="fixed-top d-none d-xl-block">
-		<nav>
-			<div class="headerContainer">
-				<div class="logo">
-					<a href="index.html"><img src="media/header/logo.png" alt="logo"></a>
-				</div>
-
-				<div class="headerContainer__links">
-					<a href="index.html">Inicio</a>
-					<a href="shop.html" class="headerContainer__links--activate">Shop</a>
-					<a href="recetas.html">Recetas</a>
-					<a href="donde_comprar.html">Donde Comprar</a>
-					<a href="contacto.html">Contacto</a>
-				</div>
-			</div>
-			<div class="redSocial widthLink">
-				<a href="https://www.instagram.com/lacteosbarrazasa/" target="_blank"><img src="media/header/instagram.png" alt="Instagram"></a>
-				<a href="https://www.facebook.com/lacteos.barraza" target="_blank"><img src="media/header/facebook.png" alt="Facebook"></a>
-				<a href="https://twitter.com/LacteosBarraza" target="_blank"><img src="media/header/twitter.png" alt="Twitter"></a>
-			</div>
-		</nav>
-	</header>
-	<nav class="navbar navbar-expand-xl navbar-light bg-light mobileBar d-xl-none fixed-top">
-		<a href="index.html"><img src="media/header/logo.png" alt="logo" class="logoMobile"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
+	<nav class="navbar navbar-expand-xl navbar-light p-0 sticky-top">
+		<a class="navbar-brand" href="index.html"><img src="media/header/logo.png" alt="logo"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-		  <ul class="navbar-nav">
-			<li class="nav-item">
-			  <a class="nav-link" href="index.html">Inicio</a>
-			</li>
-			<li class="nav-item active">
-			  <a class="nav-link" href="shop.html">Shop<span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="recetas.html">Recetas</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="donde_comprar.html">Donde Comprar</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="contacto.html">Contacto</a>
-			</li>
-			<li class="d-flex justify-content-evenly redSocial widthLink">
-				<a class="nav-link" href="https://www.instagram.com/lacteosbarrazasa/" target="_blank"><img src="media/header/instagram.png" alt="Instagram"></a>
-				<a class="nav-link" href="https://www.facebook.com/lacteos.barraza" target="_blank"><img src="media/header/facebook.png" alt="Facebook"></a>
-				<a class="nav-link" href="https://twitter.com/LacteosBarraza" target="_blank"><img src="media/header/twitter.png" alt="Twitter"></a>
-			</li>
-		  </ul>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav mr-auto ml-auto text-center">
+				<a class="nav-link px-5" href="index.html">Inicio</a>
+				<a class="nav-link active headerContainer__links--activate px-5" href="shop.html">Shop</a>
+				<a class="nav-link px-5" href="recetas.html">Recetas</a>
+				<a class="nav-link px-5" href="donde_comprar.html">Donde Comprar</a>
+				<a class="nav-link px-5" href="contacto.html">Contacto</a>
+			</div>
+			<div class="widthLink mt-2 d-flex flex-row justify-content-center flex-wrap mb-2">
+				<a class="mx-3" href="https://www.instagram.com/lacteosbarrazasa/" target="_blank"><img src="media/header/instagram.png" alt="Instagram"></a>
+				<a class="mx-3" href="https://www.facebook.com/lacteos.barraza" target="_blank"><img src="media/header/facebook.png" alt="Facebook"></a>
+				<a class="mx-3" href="https://twitter.com/LacteosBarraza" target="_blank"><img src="media/header/twitter.png" alt="Twitter"></a>
+			</div>
 		</div>
 	</nav>
 <body class="font-weight-regular">
@@ -66,148 +34,148 @@
 		<div class="secciones">
 			<div class="pagina font-weight-bold">SHOP</div>
 			<div class="shop shop--center">
-				<div>
+				<div class="mb-3">
 					<a data-toggle="modal" data-target="#muzaModal"><img src="media/shop/muzza.jpg" class="imgShop" alt="Cilindro Muzzarella"></a>
 					<div class="shop__nameProd shop__nameProd--big font-weight-semi-bold">Muzzarella</div>
-						<div class="shop__priceProd shop__priceProd--medium">$2000</div>
-							<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#muzaModal">
-								Comprar
+					<div class="shop__priceProd shop__priceProd--medium">$2000</div>
+					<a href="pagos.html" class="btn btn-danger">
+						Comprar
+					</a>
+					<div class="modal fade" id="muzaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-xl">
+						<div class="modal-content">
+							<div class="modal-header bg-danger">
+							<h5 class="modal-title text-white" id="exampleModalLabel">Cilindro Muzzarella 3KG</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
 							</button>
-							<div class="modal fade" id="muzaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-xl">
-								<div class="modal-content">
-									<div class="modal-header bg-danger">
-									<h5 class="modal-title text-white" id="exampleModalLabel">Cilindro Muzzarella 3KG</h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
+							</div>
+							<div class="modal-body">
+								<div class="comprarQueso">
+									<img src="media/shop/muzza.jpg" alt="Logo Muzzarella">
+									<div class="textQueso">
+										<h2>Cilindro Muzzarella 3KG</h2>
+										<p>La muzzarella posee una identidad única para todos los argentinos que con sus gustos, costumbres y usos le fueron dando una identidad única a este queso. Es elaborada con leche de vaca y como producto presente de la base alimentaria reúne a miles de personas en la mesa diaria.</p>
 									</div>
-									<div class="modal-body">
-										<div class="comprarQueso">
-											<img src="media/shop/muzza.jpg" alt="Logo Muzzarella">
-											<div class="textQueso">
-												<h2>Cilindro Muzzarella 3KG</h2>
-												<p>La muzzarella posee una identidad única para todos los argentinos que con sus gustos, costumbres y usos le fueron dando una identidad única a este queso. Es elaborada con leche de vaca y como producto presente de la base alimentaria reúne a miles de personas en la mesa diaria.</p>
-											</div>
-										</div>
-									</div>
-									<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-dismiss="modal">Seguir Comprando</button>
-									<a href="pagos.html"><button type="button" class="btn btn-danger">Comprar</button></a>
-									</div>
-								</div>
 								</div>
 							</div>
+							<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Seguir Comprando</button>
+							<a href="pagos.html"><button type="button" class="btn btn-danger">Comprar</button></a>
+							</div>
+						</div>
+						</div>
+					</div>
 				</div>
-				<div>
+				<div class="mb-3">
 					<a data-toggle="modal" data-target="#cremosoModal"><img src="media/shop/cremoso.jpg" class="imgShop" alt="Queso Cremoso"></a>
 					<div class="shop__nameProd shop__nameProd--big font-weight-semi-bold">Cremoso</div>
-						<div class="shop__priceProd shop__priceProd--medium">$1500</div>
-							<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#cremosoModal">
-								Comprar
+					<div class="shop__priceProd shop__priceProd--medium">$1500</div>
+					<a href="pagos.html" class="btn btn-danger">
+						Comprar
+					</a>
+					<div class="modal fade" id="cremosoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-xl">
+						<div class="modal-content">
+							<div class="modal-header bg-danger">
+							<h5 class="modal-title text-white" id="exampleModalLabel">Cilindro Muzzarella 3KG</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
 							</button>
-							<div class="modal fade" id="cremosoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-xl">
-								<div class="modal-content">
-									<div class="modal-header bg-danger">
-									<h5 class="modal-title text-white" id="exampleModalLabel">Cilindro Muzzarella 3KG</h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
+							</div>
+							<div class="modal-body">
+								<div class="comprarQueso">
+									<img src="media/shop/cremoso.jpg" alt="Logo Cremoso">
+									<div class="textQueso">
+										<h2>Horma Cremoso</h2>
+										<ul>
+											<li>Temperatura de conservación: 4ºC a 8ºC.</li>
+											<li>Presentación: Horma.</li>
+											<li>Envasado: Al vacío.</li>
+											<li>Peso: 4,20 Kg.</li>
+										</ul>
 									</div>
-									<div class="modal-body">
-										<div class="comprarQueso">
-											<img src="media/shop/cremoso.jpg" alt="Logo Cremoso">
-											<div class="textQueso">
-												<h2>Horma Cremoso</h2>
-												<ul>
-													<li>Temperatura de conservación: 4ºC a 8ºC.</li>
-													<li>Presentación: Horma.</li>
-													<li>Envasado: Al vacío.</li>
-													<li>Peso: 4,20 Kg.</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-dismiss="modal">Seguir Comprando</button>
-									<a href="pagos.html"><button type="button" class="btn btn-danger">Comprar</button></a>
-									</div>
-								</div>
 								</div>
 							</div>
+							<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Seguir Comprando</button>
+							<a href="pagos.html"><button type="button" class="btn btn-danger">Comprar</button></a>
+							</div>
+						</div>
+						</div>
+					</div>
 				</div>
-				<div>
+				<div class="mb-3">
 					<a data-toggle="modal" data-target="#barraModal"><img src="media/shop/tybo.jpg" class="imgShop" alt="Barra Tybo"></a>
 					<div class="shop__nameProd shop__nameProd--big font-weight-semi-bold">Barra Tybo</div>
-						<div class="shop__priceProd shop__priceProd--medium">$3000</div>
-							<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#barraModal">
-								Comprar
+					<div class="shop__priceProd shop__priceProd--medium">$3000</div>
+					<a href="pagos.html" class="btn btn-danger">
+						Comprar
+					</a>
+					<div class="modal fade" id="barraModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-xl">
+						<div class="modal-content">
+							<div class="modal-header bg-danger">
+							<h5 class="modal-title text-white" id="exampleModalLabel">Cilindro Muzzarella 3KG</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
 							</button>
-							<div class="modal fade" id="barraModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-xl">
-								<div class="modal-content">
-									<div class="modal-header bg-danger">
-									<h5 class="modal-title text-white" id="exampleModalLabel">Cilindro Muzzarella 3KG</h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
+							</div>
+							<div class="modal-body">
+								<div class="comprarQueso">
+									<img src="media/shop/tybo.jpg" alt="Logo Barra Tybo">
+									<div class="textQueso">
+										<h2>Barra Tybo</h2>
+										<p>El queso Tybo argentino en barra conserva una apariencia cremosa con un color blanco amarillento uniforme. La textura es compacta y lisa, no granulosa, tal como se percibe e la vista. La corteza es lisa y bien formada, no presenta grietas ni fisuras. Su sabor es ligeramente salado, láctico y muy dócil. Posee un olor agradable, ligero, poco acentuado. La consistencia es semi dura y un poco elástica. El queso normalmente no presenta hoyos, pero en caso de tenerlos, éstos pueden estar bien dispersos.</p>
+										<p>La forma rectangular en barra del queso Tybo argentino, pesa ente 3 a 5 kg. Es un queso apropiado para utilizar en sándwichs debido a su practicidad para ser feteado. En fiambrerías y supermercados de Argentina, el tybo es uno de los quesos más vendidos para sandwiches. Popularmente, se conocen a estos como “queso de máquina”, ya que son feteados y vendidos listos para poner entre panes.</p>
 									</div>
-									<div class="modal-body">
-										<div class="comprarQueso">
-											<img src="media/shop/tybo.jpg" alt="Logo Barra Tybo">
-											<div class="textQueso">
-												<h2>Barra Tybo</h2>
-												<p>El queso Tybo argentino en barra conserva una apariencia cremosa con un color blanco amarillento uniforme. La textura es compacta y lisa, no granulosa, tal como se percibe e la vista. La corteza es lisa y bien formada, no presenta grietas ni fisuras. Su sabor es ligeramente salado, láctico y muy dócil. Posee un olor agradable, ligero, poco acentuado. La consistencia es semi dura y un poco elástica. El queso normalmente no presenta hoyos, pero en caso de tenerlos, éstos pueden estar bien dispersos.</p>
-												<p>La forma rectangular en barra del queso Tybo argentino, pesa ente 3 a 5 kg. Es un queso apropiado para utilizar en sándwichs debido a su practicidad para ser feteado. En fiambrerías y supermercados de Argentina, el tybo es uno de los quesos más vendidos para sandwiches. Popularmente, se conocen a estos como “queso de máquina”, ya que son feteados y vendidos listos para poner entre panes.</p>
-											</div>
-										</div>
-									</div>
-									<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-dismiss="modal">Seguir Comprando</button>
-									<a href="pagos.html"><button type="button" class="btn btn-danger">Comprar</button></a>
-									</div>
-								</div>
 								</div>
 							</div>
+							<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Seguir Comprando</button>
+							<a href="pagos.html"><button type="button" class="btn btn-danger">Comprar</button></a>
+							</div>
+						</div>
+						</div>
+					</div>
 				</div>
-				<div>
+				<div class="mb-3">
 					<a data-toggle="modal" data-target="#porsalutModal"><img src="media/shop/porsalut.jpg" class="imgShop" alt="Queso Por Salut"></a>
 					<div class="shop__nameProd shop__nameProd--big font-weight-semi-bold">Por Salut</div>
-						<div class="shop__priceProd shop__priceProd--medium">$1000</div>
-							<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#porsalutModal">
-								Comprar
+					<div class="shop__priceProd shop__priceProd--medium">$1000</div>
+					<a href="pagos.html" class="btn btn-danger">
+						Comprar
+					</a>
+					<div class="modal fade" id="porsalutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-xl">
+						<div class="modal-content">
+							<div class="modal-header bg-danger">
+							<h5 class="modal-title text-white" id="exampleModalLabel">Cilindro Muzzarella 3KG</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
 							</button>
-							<div class="modal fade" id="porsalutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-xl">
-								<div class="modal-content">
-									<div class="modal-header bg-danger">
-									<h5 class="modal-title text-white" id="exampleModalLabel">Cilindro Muzzarella 3KG</h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
+							</div>
+							<div class="modal-body">
+								<div class="comprarQueso">
+									<img src="media/shop/porsalut.jpg" alt="Logo Cremoso">
+									<div class="textQueso">
+										<h2>Por Salut Con Sal Horma</h2>
+										<ul>
+											<li>Temperatura de conservación: 2ºC a 8ºC.</li>
+											<li>Presentación: Horma.</li>
+											<li>Envasado: Al vacío.</li>
+											<li>Peso: 3,69 Kg.</li>
+										</ul>
 									</div>
-									<div class="modal-body">
-										<div class="comprarQueso">
-											<img src="media/shop/porsalut.jpg" alt="Logo Cremoso">
-											<div class="textQueso">
-												<h2>Por Salut Con Sal Horma</h2>
-												<ul>
-													<li>Temperatura de conservación: 2ºC a 8ºC.</li>
-													<li>Presentación: Horma.</li>
-													<li>Envasado: Al vacío.</li>
-													<li>Peso: 3,69 Kg.</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-dismiss="modal">Seguir Comprando</button>
-									<a href="pagos.html"><button type="button" class="btn btn-danger">Comprar</button></a>
-									</div>
-								</div>
 								</div>
 							</div>
+							<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Seguir Comprando</button>
+							<a href="pagos.html"><button type="button" class="btn btn-danger">Comprar</button></a>
+							</div>
+						</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<br>
@@ -226,17 +194,17 @@
 			<div class="rightFooter">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.397355338674!2d-58.48655824866335!3d-34.61939756574008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9e84b24c85d%3A0x331c55dc21eb9b59!2sL%C3%A1cteos%20Barraza!5e0!3m2!1ses-419!2sar!4v1630012673654!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 				<div class="infoFooter1">
-					info@lacteosbarraza.com.ar
+					<a href="mailto:info@lacteosbarraza.com.ar">info@lacteosbarraza.com.ar</a>
 				</div>
 				<div class="infoFooter2">
-					Tel: +54 9 1132703392
+					Tel: (011) 4568-9547/8283
 				</div>
 			</div>
 			</div>
 		</div>
 	</footer>
 	<div>
-		<a href="https://api.whatsapp.com/send?phone=+5491132703392" target="_blank">
+		<a href="https://api.whatsapp.com/send?phone=+5491140920377" target="_blank">
 			<img id="wp" src="media/whatsapp.png" alt="Whatsapp">
 		</a>
 	</div>
