@@ -156,6 +156,17 @@ nav{
 .secciones{
     width: 86%;
     margin: 0 auto;
+    .accordion{
+        .card{
+            .card-body{
+                ul{
+                    li{
+                        list-style: inside;
+                    }
+                }
+            }
+        }
+    }
     .shop{
         display: flex;
         flex-direction: row;

@@ -247,6 +247,10 @@ nav {
   margin: 0 auto;
 }
 
+.secciones .accordion .card .card-body ul li {
+  list-style: inside;
+}
+
 .secciones .shop {
   display: -webkit-box;
   display: -ms-flexbox;
