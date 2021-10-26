@@ -358,6 +358,10 @@ nav {
           transform: scale(1.05);
 }
 
+.secciones .mainRecetas div div {
+  font-size: 20px;
+}
+
 #recetasContainer {
   width: 86%;
   margin: 0 auto;
