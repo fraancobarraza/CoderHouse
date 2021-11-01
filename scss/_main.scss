@@ -291,8 +291,19 @@ nav{
 }
 .contacto{
 	background: #c7ad7c;
-} 
+}
 
+@media (max-width: 768px){
+    .contacto{
+        form{
+            div{
+                .rightContactText{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
 
 /*Preguntas Frecuentes*/
 

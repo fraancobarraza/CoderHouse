@@ -19,36 +19,6 @@
   font-weight: 700;
 }
 
-#foto1 {
-  grid-area: foto1;
-  background: #c7ad7c;
-  padding: 5px 0;
-}
-
-#foto1 img {
-  width: 75%;
-}
-
-#foto2 {
-  grid-area: foto1;
-  background: #c7ad7c;
-  padding: 5px 0;
-}
-
-#foto2 img {
-  width: 75%;
-}
-
-#foto3 {
-  grid-area: foto1;
-  background: #c7ad7c;
-  padding: 5px 0;
-}
-
-#foto3 img {
-  width: 75%;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -391,6 +361,12 @@ nav {
 
 .contacto {
   background: #c7ad7c;
+}
+
+@media (max-width: 768px) {
+  .contacto form div .rightContactText {
+    text-align: center;
+  }
 }
 
 /*Preguntas Frecuentes*/
