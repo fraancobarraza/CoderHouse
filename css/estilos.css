@@ -363,6 +363,10 @@ nav {
   background: #c7ad7c;
 }
 
+.contacto form div .casillas {
+  border: solid black 1px;
+}
+
 @media (max-width: 768px) {
   .contacto form div .rightContactText {
     text-align: center;

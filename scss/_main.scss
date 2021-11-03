@@ -291,6 +291,13 @@ nav{
 }
 .contacto{
 	background: #c7ad7c;
+    form{
+        div{
+            .casillas{
+                border: solid black 1px;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px){
